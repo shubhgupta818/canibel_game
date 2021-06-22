@@ -1,0 +1,41 @@
+#angel1{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: green;
+}
+#angel2{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: green;
+    position: absolute;
+    left: 500px;
+}
+#demon1{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: red;
+}
+#demon2{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    left: 620px;
+    background-color: red;
+}
+
+
+#back-btn{
+    position: relative;
+    top: 150px;
+    
+}
+
+#forward-btn{
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
