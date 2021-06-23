@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Mania</title>
     <link rel="stylesheet" href="style.css">
 
 
@@ -147,6 +147,9 @@
     </script>
 </head>
 <body>
+    <div class="head">
+       <H1>MISSIONARY AND CANNIBAL GAME</H1> 
+    </div>
     <div class="person">
         <button onclick="toBoat('A1')" id="angel1">
             <script>
@@ -154,10 +157,8 @@
                 document.write(state1[0]);
             </script>
         </button>
-        
-        
-        
-    
+
+
         <button onclick="toBoat('D1')" id="demon1">
             <script>
                 document.write(state1[1]);
@@ -177,13 +178,15 @@
                 document.write(state2[1]);
             </script>
         </button>   
-    
+    </div>
+    <div class="button">
     <button onclick="moveBack()" id="back-btn">
-        left
+        Left
     </button>
 
     <button onclick="moveForward()" id="forward-btn">
-        right
+        Right
     </button>
+</div>
 </body>
 </html>
