@@ -1,285 +1,516 @@
-const ang1=[1, 1, 1];
-        const ang2=[0, 0, 0];
-        const dem1=[1, 1, 1];
-        const dem2=[0, 0, 0];
-        const boat= [0,0,0,0,0,0];
-        var flag= [0,0,0,0,0,0];
+        const ang1=[1, 1, 1];                          //left bank positions
+        const ang2=[0, 0, 0];                          //right bank positions
+        const dem1=[1, 1, 1];                          //left bank positions
+        const dem2=[0, 0, 0];                          //right bank positions
+        const boat= [0,0,0,0,0,0];                      //presence of person on boat
+        const flag= [-1,-1,-1,-1,-1,-1];                         //on which side of boat person is
+        const boat_flag=[0,0];
         let boatPos=0; 
         let boatSpace=0;
 
         function toBoat(character)
         {   
                 console.log(character);
-                if(character==='A1' && ang1[0]== 1)
+                if(character==='A1' && (boat[0]== 1 && boatPos== 0))
+                {
+                    document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.right) || 0) + 0 + "px";
+                    ang1[0]=1;
+                    boat[0]=0;
+                    boatSpace--;
+                    if(flag[0]==0){
+                        boat_flag[0]=0;
+                    }
+                    else if(flag[0]==1){
+                        boat_flag[1]=0;
+                    }
+                    
+                    //break;
+
+                }
+                else if(character==='A2' && (boat[1]== 1 && boatPos== 0))
+                {
+                    document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.right) || 0) + 0 + "px";
+                    ang1[1]=1;
+                    boat[1]=0;
+                    boatSpace--;
+                    if(flag[1]==0){
+                        boat_flag[0]=0;
+                    }
+                    else if(flag[1]==1){
+                        boat_flag[1]=0;
+                    }
+                    //break;
+
+                }
+                else if(character==='A3' && (boat[2]== 1 && boatPos== 0))
+                {
+                    document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.right) || 0) + 0 + "px";
+                    ang1[2]=1;
+                    boat[2]=0;
+                    boatSpace--;
+                    if(flag[2]==0){
+                        boat_flag[0]=0;
+                    }
+                    else if(flag[2]==1){
+                        boat_flag[1]=0;
+                    }
+                    //break;
+
+                }
+                else if(character==='D1' && (boat[3]== 1 && boatPos== 0))
+                {
+                    document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.right) || 0) + 0 + "px";
+                    dem1[0]=1;
+                    boat[3]=0;
+                    boatSpace--;
+                    if(flag[3]==0){
+                        boat_flag[0]=0;
+                    }
+                    else if(flag[3]==1){
+                        boat_flag[1]=0;
+                    }
+                    //break;
+
+                }
+                else if(character==='D2' && (boat[4]== 1 && boatPos== 0))
+                {
+                    document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.right) || 0) + 0 + "px";
+                    dem1[1]=1;
+                    boat[4]=0;
+                    boatSpace--;
+                    if(flag[4]==0){
+                        boat_flag[0]=0;
+                    }
+                    else if(flag[4]==1){
+                        boat_flag[1]=0;
+                    }
+                    //break;
+
+                }
+                else if(character==='D3' && (boat[5]== 1 && boatPos== 0))
+                {
+                    document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.right) || 0) + 0 + "px";
+                    dem1[2]=1;
+                    boat[5]=0;
+                    boatSpace--;
+                    if(flag[5]==0){
+                        boat_flag[0]=0;
+                    }
+                    else if(flag[5]==1){
+                        boat_flag[1]=0;
+                    }
+                    //break;
+
+                }
+                else if(character==='A1' && (boat[0]== 1 && boatPos== 1))
+                {
+                    
+                    ang2[0]=1;
+                    boat[0]=0;
+                    boatSpace--;
+                    if(flag[0]==0){
+                        boat_flag[0]=0;
+                        document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 220 + "px";
+                    }
+                    else if(flag[0]==1){
+                        boat_flag[1]=0;
+                        document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 130 + "px";
+                    }
+                    
+                    //break;
+
+                }
+                else if(character==='A2' && (boat[1]== 1 && boatPos== 1))
+                {
+                    
+                    ang2[1]=1;
+                    boat[1]=0;
+                    boatSpace--;
+                    if(flag[1]==0){
+                        boat_flag[0]=0;
+                        document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 300 + "px";
+                    }
+                    else if(flag[1]==1){
+                        boat_flag[1]=0;
+                        document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 210 + "px";
+                    }
+                    
+                    //break;
+
+                }
+                else if(character==='A3' && (boat[2]== 1 && boatPos== 1))
+                {
+                    
+                    ang2[2]=1;
+                    boat[2]=0;
+                    boatSpace--;
+                    if(flag[2]==0){
+                        boat_flag[0]=0;
+                        document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 380 + "px";
+                    }
+                    else if(flag[2]==1){
+                        boat_flag[1]=0;
+                        document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 190 + "px";
+                    }
+                    
+                    //break;
+
+                }
+                else if(character==='D1' && (boat[3]== 1 && boatPos== 1))
+                {
+                    
+                    dem2[0]=1;
+                    boat[3]=0;
+                    boatSpace--;
+                    if(flag[3]==0){
+                        boat_flag[0]=0;
+                        document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 460 + "px";
+                    }
+                    else if(flag[3]==1){
+                        boat_flag[1]=0;
+                        document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 370 + "px";
+                    }
+                    
+                    //break;
+
+                }
+                else if(character==='D2' && (boat[4]== 1 && boatPos== 1))
+                {
+                    
+                    dem2[1]=1;
+                    boat[4]=0;
+                    boatSpace--;
+                    if(flag[4]==0){
+                        boat_flag[0]=0;
+                        document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 550 + "px";
+                    }
+                    else if(flag[4]==1){
+                        boat_flag[1]=0;
+                        document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 460 + "px";
+                    }
+                    
+                    //break;
+
+                }
+                else if(character==='D3' && (boat[5]== 1 && boatPos== 1))
+                {
+                    
+                    dem2[2]=1;
+                    boat[5]=0;
+                    boatSpace--;
+                    if(flag[5]==0){
+                        boat_flag[0]=0;
+                        document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 640 + "px";
+                    }
+                    else if(flag[5]==1){
+                        boat_flag[1]=0;
+                        document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 550 + "px";
+                    }
+                    
+                    //break;
+
+                }
+
+                else if(character==='A1' && ang1[0]== 1)
                 {
                     if(boatPos== 0)
-                    {
-                        if(boatSpace== 0)
+                    {   
+                        
+
+                        
+                        if(boatSpace== 0 || boat_flag[0]==0)
                         {   document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 550 + "px";
                            
                             flag[0]=0;
                             ang1[0]=0;
                             boat[0]=1;
+                            boat_flag[0]=1;
                             
                         }
-                        if(boatSpace== 1)
+                        else if(boatSpace== 1)
                         {
                             document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 640 + "px";
                              flag[0]=1;
                             ang1[0]=0;
                             boat[0]=1;
-                           
+                            boat_flag[1]=1;
                         }
                         boatSpace++;
+
+                        
 
 
                     }
                    
                 }
                 
-                if(character==='A2' && ang1[1]===1)
+                else if(character==='A2' && ang1[1]===1)
                 {
                     if(boatPos===0)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 470 + "px";
                             ang1[1]=0;
                             boat[1]=1;
                             flag[1]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                        else if(boatSpace===1)
                         {
                             document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 560 + "px";
                             ang1[1]=0;
                             boat[1]=1;
                             flag[1]=1;
+                            boat_flag[1]=1;
                         }
                         boatSpace++;
 
                     }
                 }
-                if(character==='A3' && ang1[2]===1)
+                else if(character==='A3' && ang1[2]===1)
                 {
                     if(boatPos===0)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 390 + "px";
                             ang1[2]=0;
                             boat[2]=1;
                             flag[2]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                        else if(boatSpace===1)
                         {
                             document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 480 + "px";
                             ang1[2]=0;
                             boat[2]=1;
                             flag[2]=1;
+                            boat_flag[1]=1;
                         }
                         boatSpace++;
 
                     }
                 }
-                if(character==='D1' && dem1[0]===1)
+                else if(character==='D1' && dem1[0]===1)
                 {
                     if(boatPos===0)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 300 + "px";
                             dem1[0]=0;
                             boat[3]=1;
                             flag[3]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                        else if(boatSpace===1)
                         {
                             document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 390 + "px";
                             dem1[0]=0;
                             boat[3]=1;
                             flag[3]=1;
+                            boat_flag[1]=1;
                         
                         }
                         boatSpace++;
                     }
                 }
-                if(character==='D2' && dem1[1]===1)
+                else if(character==='D2' && dem1[1]===1)
                 {
                     if(boatPos===0)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 210 + "px";
                             dem1[1]=0;
                             boat[4]=1;
                             flag[4]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                        else if(boatSpace===1)
                         {
                             document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 300 + "px";
                             dem1[1]=0;
                             boat[4]=1;
                             flag[4]=1;
+                            boat_flag[1]=1;
                         }
                         boatSpace++;
                     }
                 }
-                if(character==='D3' && dem1[2]===1)
+                else if(character==='D3' && dem1[2]===1)
                 {
                     if(boatPos===0)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 120 + "px";
                             dem1[2]=0;
                             boat[5]=1;
                             flag[5]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                        else if(boatSpace===1)
                         {
                             document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 210 + "px";
                             dem1[2]=0;
                             boat[5]=1;
                             flag[5]=1;
+                            boat_flag[1]=1;
                         }
                         boatSpace++;
                     }
                 }
-                console.log(boatPos)
+                
 
 
-                if(character==='A1' && ang2[0]== 1)
+                else if(character==='A1' && ang2[0]== 1)
                 {   
                     if(boatPos==1)
                     {   
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {   console.log('shubh');
                             document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.right) || 0) + 730 + "px";
                             ang2[0]=0;
                             boat[0]=1;
                             flag[0]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                       else if(boatSpace===1)
                         {       
                             document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.right) || 0) + 830 + "px";
                             ang2[0]=0;
                             boat[0]=1;
                             flag[0]=1;
+                            boat_flag[1]=1;
                         }
                         boatSpace++; 
                     }
                     
                 }
-                if(character==='A2' && ang2[1]== 1)
-                {   console.log(character);
+                else if(character==='A2' && ang2[1]== 1)
+                {   
                     if(boatPos==1)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.right) || 0) + 650 + "px";
                             ang2[1]=0;
                             boat[1]=1;
                             flag[1]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                       else if(boatSpace===1)
                         {
                             document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.right) || 0) + 740 + "px";
                             ang2[1]=0;
                             boat[1]=1;
-                            flag[1]=1
+                            flag[1]=1;
+                            boat_flag[1]=1;
                         }
                         boatSpace++; 
                     }
                     
                 }
-                if(character==='A3' && ang2[2]== 1)
+                else if(character==='A3' && ang2[2]== 1)
                 { console.log(character);
                     if(boatPos==1)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.right) || 0) + 570 + "px";
                             ang2[2]=0;
                             boat[2]=1;
                             flag[2]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                        else if(boatSpace===1)
                         {
                             document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.right) || 0) + 660 + "px";
                             ang2[2]=0;
                             boat[2]=1;
                             flag[2]=1;
+                            boat_flag[1]=1;
                         }
                         boatSpace++; 
                     }
                     
                 }
-                if(character==='D1' && dem2[0]===1)
+                else if(character==='D1' && dem2[0]===1)
                 { console.log(character);
                     if(boatPos===1)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.right) || 0) + 490 + "px";
                             dem2[0]=0;
                             boat[3]=1;
                             flag[3]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                        else if(boatSpace===1)
                         {
                             document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.right) || 0) + 580 + "px";
                             dem2[0]=0;
                             boat[3]=1;
                             flag[3]=1;
+                            boat_flag[1]=1;
                         
                         }
                         boatSpace++;
                     }
                 }
-                if(character==='D2' && dem2[1]===1)
+                else if(character==='D2' && dem2[1]===1)
                 { console.log(character);
                     if(boatPos===1)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.right) || 0) + 400 + "px";
                             dem2[1]=0;
                             boat[4]=1;
                             flag[4]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                        else if(boatSpace===1)
                         {
                             document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.right) || 0) + 490 + "px";
                             dem2[1]=0;
                             boat[4]=1;
                             flag[4]=1;
+                            boat_flag[1]=1;
                         }
                         boatSpace++;
                     }
                 }
-                if(character==='D3' && dem2[2]===1)
+                else if(character==='D3' && dem2[2]===1)
                 { 
                     if(boatPos===1)
                     {
-                        if(boatSpace===0)
+                        if(boatSpace===0 || boat_flag[0]==0)
                         {
                             document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.right) || 0) + 310 + "px";
                             dem2[2]=0;
                             boat[5]=1;
                             flag[5]=0;
+                            boat_flag[0]=1;
                         }
-                        if(boatSpace===1)
+                        else if(boatSpace===1)
                         {
                             document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.right) || 0) + 400 + "px";
                             dem2[2]=0;
                             boat[5]=1;
-                            flag[5]=1
+                            flag[5]=1;
+                            boat_flag[0]=1;
                         }
                         boatSpace++;
                     }
                 }
             
         }
+
+        
 
         
        function move()
