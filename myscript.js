@@ -676,7 +676,7 @@
                     // document.getElementById('boat1').innerHTML='&nbsp';
                     // document.getElementById('boat2').innerHTML='&nbsp';
                     checkStatus();
-                    document.getElementById('B2').innerHTML='<img src="boat.png" width="100%" alt="">'
+                    document.getElementById('B2').innerHTML='<img src="Assets/Images/boat.png" width="100%" alt="">'
                     document.getElementById('B1').innerHTML='&nbsp';
 
                 }
@@ -783,7 +783,7 @@
                     // document.getElementById('boat3').innerHTML='&nbsp';
                     // document.getElementById('boat4').innerHTML='&nbsp';
                     checkStatus();
-                    document.getElementById('B1').innerHTML='<img src="boat.png" width="100%" alt="">'
+                    document.getElementById('B1').innerHTML='<img src="Assets/Images/boat.png" width="100%" alt="">'
                     document.getElementById('B2').innerHTML='&nbsp';
                 }
            }
