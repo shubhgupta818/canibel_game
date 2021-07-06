@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Mania</title>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
 
     <script src="myscript.js">
@@ -20,26 +20,26 @@
     <div class="head">
        <H1>MISSIONARY AND CANNIBAL GAME</H1> 
     </div>
-
+<div>
     <table id="t1" border="0" >
         <tr>
-            <td class="angel" width='80'> 
-                <button class='angel' id="a1" onclick="toBoat('A1')"><img src="angel.png" style="width: 80px;"> </button>
+            <td class="angel" width='90'> 
+                <button  id="a1" onclick="toBoat('A1')"><img src="Assets/Images/angel.png" style="width: 100%;"> </button>
              </td>
-             <td class="angel" width='80'> 
-                <button class='angel' id="a2" onclick="toBoat('A2')"><img src="angel.png" style="width: 80px;"></button>
+             <td class="angel" width='90'> 
+                <button  id="a2" onclick="toBoat('A2')"><img src="Assets/Images/angel.png" style="width: 100%;"></button>
              </td>
-             <td class="angel" width='80'> 
-                <button class='angel' id="a3" onclick="toBoat('A3')"><img src="angel.png" style="width: 80px;"></button>
-             </td>
-             <td class="demon" width='90'> 
-                <button id="d1" onclick="toBoat('D1')"><img src="devil.png" style='width: 90px;height: 90px;'></button>
+             <td class="angel" width='90'> 
+                <button  id="a3" onclick="toBoat('A3')"><img src="Assets/Images/angel.png" style="width: 100%;"></button>
              </td>
              <td class="demon" width='90'> 
-                <button id="d2" onclick="toBoat('D2')"><img src="devil.png" style='width: 90px;height: 90px;'></button>
+                <button id="d1" onclick="toBoat('D1')"><img src="Assets/Images/devil.png" style='width: 100%;'></button>
              </td>
              <td class="demon" width='90'> 
-                <button id="d3" onclick="toBoat('D3')"><img src="devil.png" style='width: 90px;height: 90px;'></button>
+                <button id="d2" onclick="toBoat('D2')"><img src="Assets/Images/devil.png" style='width: 100%;'></button>
+             </td>
+             <td class="demon" width='90'> 
+                <button id="d3" onclick="toBoat('D3')"><img src="Assets/Images/devil.png" style='width: 100%;'></button>
              </td>
              <td rowspan="2" width='30'></td>
              <td id='boat1'  width='90'>
@@ -60,52 +60,52 @@
             </td>
             <td rowspan="2" width='30'></td>
 
-             <td id="angel4" width='80'> 
+             <td class="angel" width='90'> 
                 
              </td>
-             <td id="angel5" width='80'> 
+             <td class="angel" width='90'> 
                  
              </td>
-             <td id="angel6" width='80'> 
+             <td class="angel" width='90'> 
              </td>
-             <td id="demon4" width='90'> 
+             <td class="demon" width='90'> 
              </td>
-             <td id="demon5" width='90'> 
+             <td class="demon" width='90'> 
              </td>
-             <td id="demon6" width='90'> 
+             <td class="demon" width='90'> 
              </td>
              
         </tr>
     </table>
     <table id="t2" border="0"> 
         <tr>
-            <td  colspan="6" width='550'>  </td>
+            <td  colspan="6" width='580'>  </td>
             <td id="B1" colspan="2" width='180'>
-                <img src="boat.png" width="180px" alt="">
+                <img src="Assets/Images/boat.png" width="100%" alt="">
             </td>
             <td id="B2" colspan="2" width='180'>
                 &nbsp
             </td>
             
-            <td colspan="6" width='550'>&nbsp</td>
+            <td colspan="6" width='580'>&nbsp</td>
         </tr>
     </table>
     <table id="back_image">
-             <td class="land" colspan="6" width='550'> 
+             <td class="land" colspan="6" width='580' > 
 
              </td>
-            <td id="water" colspan="4" width='360'>
+            <td id="water" colspan="4" width='360' >
                
             </td>
            
             
-            <td class="land" colspan="6" width='550'>
+            <td class="land" colspan="6" width='580' >
 
             </td>
     </table>
     
 
-
+</div>
     
     <div class="button">
     <button id="GO" onclick="move()">

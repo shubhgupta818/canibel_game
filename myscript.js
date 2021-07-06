@@ -13,15 +13,20 @@
                 console.log(character);
                 if(character==='A1' && (boat[0]== 1 && boatPos== 0))
                 {
-                    document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.right) || 0) + 0 + "px";
+                   // document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.right) || 0) + 0 + "px";
+                   
                     ang1[0]=1;
                     boat[0]=0;
                     boatSpace--;
                     if(flag[0]==0){
                         boat_flag[0]=0;
+                        document.getElementById('t1').rows[0].cells[0].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                        document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";
                     }
                     else if(flag[0]==1){
                         boat_flag[1]=0;
+                        document.getElementById('t1').rows[0].cells[0].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                        document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";
                     }
                     
                     //break;
@@ -29,75 +34,90 @@
                 }
                 else if(character==='A2' && (boat[1]== 1 && boatPos== 0))
                 {
-                    document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.right) || 0) + 0 + "px";
                     ang1[1]=1;
                     boat[1]=0;
                     boatSpace--;
                     if(flag[1]==0){
                         boat_flag[0]=0;
+                        document.getElementById('t1').rows[0].cells[1].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                        document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";
                     }
                     else if(flag[1]==1){
                         boat_flag[1]=0;
+                        document.getElementById('t1').rows[0].cells[1].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                        document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";
                     }
                     //break;
 
                 }
                 else if(character==='A3' && (boat[2]== 1 && boatPos== 0))
                 {
-                    document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.right) || 0) + 0 + "px";
                     ang1[2]=1;
                     boat[2]=0;
                     boatSpace--;
                     if(flag[2]==0){
                         boat_flag[0]=0;
+                        document.getElementById('t1').rows[0].cells[2].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                        document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";
                     }
                     else if(flag[2]==1){
                         boat_flag[1]=0;
+                        document.getElementById('t1').rows[0].cells[2].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                        document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";
                     }
                     //break;
 
                 }
                 else if(character==='D1' && (boat[3]== 1 && boatPos== 0))
                 {
-                    document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.right) || 0) + 0 + "px";
                     dem1[0]=1;
                     boat[3]=0;
                     boatSpace--;
                     if(flag[3]==0){
                         boat_flag[0]=0;
+                        document.getElementById('t1').rows[0].cells[3].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                        document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";
                     }
                     else if(flag[3]==1){
                         boat_flag[1]=0;
+                        document.getElementById('t1').rows[0].cells[3].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                        document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";
                     }
                     //break;
 
                 }
                 else if(character==='D2' && (boat[4]== 1 && boatPos== 0))
                 {
-                    document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.right) || 0) + 0 + "px";
                     dem1[1]=1;
                     boat[4]=0;
                     boatSpace--;
                     if(flag[4]==0){
                         boat_flag[0]=0;
+                        document.getElementById('t1').rows[0].cells[4].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                        document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";
                     }
                     else if(flag[4]==1){
                         boat_flag[1]=0;
+                        document.getElementById('t1').rows[0].cells[4].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                        document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";
                     }
                     //break;
 
                 }
                 else if(character==='D3' && (boat[5]== 1 && boatPos== 0))
                 {
-                    document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.right) || 0) + 0 + "px";
                     dem1[2]=1;
                     boat[5]=0;
                     boatSpace--;
                     if(flag[5]==0){
                         boat_flag[0]=0;
+                        document.getElementById('t1').rows[0].cells[5].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                        document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";
                     }
                     else if(flag[5]==1){
                         boat_flag[1]=0;
+                        document.getElementById('t1').rows[0].cells[5].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                        document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";
                     }
                     //break;
 
@@ -110,12 +130,14 @@
                     boatSpace--;
                     if(flag[0]==0){
                         boat_flag[0]=0;
-                        document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 220 + "px";
+                        document.getElementById('t1').rows[0].cells[12].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                        document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";
+
                     }
                     else if(flag[0]==1){
                         boat_flag[1]=0;
-                        document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 130 + "px";
-                    }
+                        document.getElementById('t1').rows[0].cells[12].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                        document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                    }
                     
                     //break;
 
@@ -128,11 +150,13 @@
                     boatSpace--;
                     if(flag[1]==0){
                         boat_flag[0]=0;
-                        document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 300 + "px";
-                    }
+                        document.getElementById('t1').rows[0].cells[13].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                        document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";                   
+                     }
                     else if(flag[1]==1){
                         boat_flag[1]=0;
-                        document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 210 + "px";
+                        document.getElementById('t1').rows[0].cells[13].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                        document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";
                     }
                     
                     //break;
@@ -146,12 +170,14 @@
                     boatSpace--;
                     if(flag[2]==0){
                         boat_flag[0]=0;
-                        document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 380 + "px";
-                    }
+                        document.getElementById('t1').rows[0].cells[14].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                        document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";
+                       }
                     else if(flag[2]==1){
                         boat_flag[1]=0;
-                        document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 190 + "px";
-                    }
+                        document.getElementById('t1').rows[0].cells[14].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                        document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                   
+                     }
                     
                     //break;
 
@@ -164,11 +190,13 @@
                     boatSpace--;
                     if(flag[3]==0){
                         boat_flag[0]=0;
-                        document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 460 + "px";
+                        document.getElementById('t1').rows[0].cells[15].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                        document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";                    
                     }
                     else if(flag[3]==1){
                         boat_flag[1]=0;
-                        document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 370 + "px";
+                        document.getElementById('t1').rows[0].cells[15].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                        document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                    
                     }
                     
                     //break;
@@ -182,11 +210,13 @@
                     boatSpace--;
                     if(flag[4]==0){
                         boat_flag[0]=0;
-                        document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 550 + "px";
+                        document.getElementById('t1').rows[0].cells[16].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                        document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";                    
                     }
                     else if(flag[4]==1){
                         boat_flag[1]=0;
-                        document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 460 + "px";
+                        document.getElementById('t1').rows[0].cells[16].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                        document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                    
                     }
                     
                     //break;
@@ -200,11 +230,13 @@
                     boatSpace--;
                     if(flag[5]==0){
                         boat_flag[0]=0;
-                        document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 640 + "px";
+                        document.getElementById('t1').rows[0].cells[17].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                        document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";                    
                     }
                     else if(flag[5]==1){
                         boat_flag[1]=0;
-                        document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 550 + "px";
+                        document.getElementById('t1').rows[0].cells[17].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                        document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                    
                     }
                     
                     //break;
@@ -219,8 +251,9 @@
 
                         
                         if(boatSpace== 0 || boat_flag[0]==0)
-                        {   document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 550 + "px";
-                           
+                        {   //document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 550 + "px";
+                            document.getElementById('t1').rows[0].cells[7].innerHTML=document.getElementById('t1').rows[0].cells[0].innerHTML;
+                            document.getElementById('t1').rows[0].cells[0].innerHTML="&nbsp";
                             flag[0]=0;
                             ang1[0]=0;
                             boat[0]=1;
@@ -229,7 +262,9 @@
                         }
                         else if(boatSpace== 1)
                         {
-                            document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 640 + "px";
+                            //document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 640 + "px";
+                            document.getElementById('t1').rows[0].cells[8].innerHTML=document.getElementById('t1').rows[0].cells[0].innerHTML;
+                            document.getElementById('t1').rows[0].cells[0].innerHTML="&nbsp";
                              flag[0]=1;
                             ang1[0]=0;
                             boat[0]=1;
@@ -250,7 +285,9 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 470 + "px";
+                            //document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 470 + "px";
+                            document.getElementById('t1').rows[0].cells[7].innerHTML=document.getElementById('t1').rows[0].cells[1].innerHTML;
+                            document.getElementById('t1').rows[0].cells[1].innerHTML="&nbsp";
                             ang1[1]=0;
                             boat[1]=1;
                             flag[1]=0;
@@ -258,7 +295,8 @@
                         }
                         else if(boatSpace===1)
                         {
-                            document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 560 + "px";
+                            document.getElementById('t1').rows[0].cells[8].innerHTML=document.getElementById('t1').rows[0].cells[1].innerHTML;
+                            document.getElementById('t1').rows[0].cells[1].innerHTML="&nbsp";
                             ang1[1]=0;
                             boat[1]=1;
                             flag[1]=1;
@@ -274,7 +312,8 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 390 + "px";
+                            document.getElementById('t1').rows[0].cells[7].innerHTML=document.getElementById('t1').rows[0].cells[2].innerHTML;
+                            document.getElementById('t1').rows[0].cells[2].innerHTML="&nbsp";
                             ang1[2]=0;
                             boat[2]=1;
                             flag[2]=0;
@@ -282,7 +321,8 @@
                         }
                         else if(boatSpace===1)
                         {
-                            document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 480 + "px";
+                            document.getElementById('t1').rows[0].cells[8].innerHTML=document.getElementById('t1').rows[0].cells[2].innerHTML;
+                            document.getElementById('t1').rows[0].cells[2].innerHTML="&nbsp";
                             ang1[2]=0;
                             boat[2]=1;
                             flag[2]=1;
@@ -298,7 +338,8 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 300 + "px";
+                            document.getElementById('t1').rows[0].cells[7].innerHTML=document.getElementById('t1').rows[0].cells[3].innerHTML;
+                            document.getElementById('t1').rows[0].cells[3].innerHTML="&nbsp";
                             dem1[0]=0;
                             boat[3]=1;
                             flag[3]=0;
@@ -306,7 +347,8 @@
                         }
                         else if(boatSpace===1)
                         {
-                            document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 390 + "px";
+                            document.getElementById('t1').rows[0].cells[8].innerHTML=document.getElementById('t1').rows[0].cells[3].innerHTML;
+                            document.getElementById('t1').rows[0].cells[3].innerHTML="&nbsp";
                             dem1[0]=0;
                             boat[3]=1;
                             flag[3]=1;
@@ -322,7 +364,8 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 210 + "px";
+                            document.getElementById('t1').rows[0].cells[7].innerHTML=document.getElementById('t1').rows[0].cells[4].innerHTML;
+                            document.getElementById('t1').rows[0].cells[4].innerHTML="&nbsp";
                             dem1[1]=0;
                             boat[4]=1;
                             flag[4]=0;
@@ -330,7 +373,8 @@
                         }
                         else if(boatSpace===1)
                         {
-                            document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 300 + "px";
+                            document.getElementById('t1').rows[0].cells[8].innerHTML=document.getElementById('t1').rows[0].cells[4].innerHTML;
+                            document.getElementById('t1').rows[0].cells[4].innerHTML="&nbsp";
                             dem1[1]=0;
                             boat[4]=1;
                             flag[4]=1;
@@ -345,7 +389,8 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 120 + "px";
+                            document.getElementById('t1').rows[0].cells[7].innerHTML=document.getElementById('t1').rows[0].cells[5].innerHTML;
+                            document.getElementById('t1').rows[0].cells[5].innerHTML="&nbsp";
                             dem1[2]=0;
                             boat[5]=1;
                             flag[5]=0;
@@ -353,7 +398,8 @@
                         }
                         else if(boatSpace===1)
                         {
-                            document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 210 + "px";
+                            document.getElementById('t1').rows[0].cells[8].innerHTML=document.getElementById('t1').rows[0].cells[5].innerHTML;
+                            document.getElementById('t1').rows[0].cells[5].innerHTML="&nbsp";
                             dem1[2]=0;
                             boat[5]=1;
                             flag[5]=1;
@@ -370,8 +416,8 @@
                     if(boatPos==1)
                     {   
                         if(boatSpace===0 || boat_flag[0]==0)
-                        {   console.log('shubh');
-                            document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.right) || 0) + 730 + "px";
+                        {    document.getElementById('t1').rows[0].cells[9].innerHTML=document.getElementById('t1').rows[0].cells[12].innerHTML;
+                            document.getElementById('t1').rows[0].cells[12].innerHTML="&nbsp";
                             ang2[0]=0;
                             boat[0]=1;
                             flag[0]=0;
@@ -379,7 +425,8 @@
                         }
                        else if(boatSpace===1)
                         {       
-                            document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.right) || 0) + 830 + "px";
+                            document.getElementById('t1').rows[0].cells[10].innerHTML=document.getElementById('t1').rows[0].cells[12].innerHTML;
+                            document.getElementById('t1').rows[0].cells[12].innerHTML="&nbsp";
                             ang2[0]=0;
                             boat[0]=1;
                             flag[0]=1;
@@ -395,7 +442,8 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.right) || 0) + 650 + "px";
+                            document.getElementById('t1').rows[0].cells[9].innerHTML=document.getElementById('t1').rows[0].cells[13].innerHTML;
+                            document.getElementById('t1').rows[0].cells[13].innerHTML="&nbsp";
                             ang2[1]=0;
                             boat[1]=1;
                             flag[1]=0;
@@ -403,7 +451,8 @@
                         }
                        else if(boatSpace===1)
                         {
-                            document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.right) || 0) + 740 + "px";
+                            document.getElementById('t1').rows[0].cells[10].innerHTML=document.getElementById('t1').rows[0].cells[13].innerHTML;
+                            document.getElementById('t1').rows[0].cells[13].innerHTML="&nbsp";
                             ang2[1]=0;
                             boat[1]=1;
                             flag[1]=1;
@@ -419,7 +468,8 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.right) || 0) + 570 + "px";
+                            document.getElementById('t1').rows[0].cells[9].innerHTML=document.getElementById('t1').rows[0].cells[14].innerHTML;
+                            document.getElementById('t1').rows[0].cells[14].innerHTML="&nbsp";
                             ang2[2]=0;
                             boat[2]=1;
                             flag[2]=0;
@@ -427,7 +477,8 @@
                         }
                         else if(boatSpace===1)
                         {
-                            document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.right) || 0) + 660 + "px";
+                            document.getElementById('t1').rows[0].cells[10].innerHTML=document.getElementById('t1').rows[0].cells[14].innerHTML;
+                            document.getElementById('t1').rows[0].cells[14].innerHTML="&nbsp";
                             ang2[2]=0;
                             boat[2]=1;
                             flag[2]=1;
@@ -443,7 +494,8 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.right) || 0) + 490 + "px";
+                            document.getElementById('t1').rows[0].cells[9].innerHTML=document.getElementById('t1').rows[0].cells[15].innerHTML;
+                            document.getElementById('t1').rows[0].cells[15].innerHTML="&nbsp";
                             dem2[0]=0;
                             boat[3]=1;
                             flag[3]=0;
@@ -451,7 +503,8 @@
                         }
                         else if(boatSpace===1)
                         {
-                            document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.right) || 0) + 580 + "px";
+                            document.getElementById('t1').rows[0].cells[10].innerHTML=document.getElementById('t1').rows[0].cells[15].innerHTML;
+                            document.getElementById('t1').rows[0].cells[15].innerHTML="&nbsp";
                             dem2[0]=0;
                             boat[3]=1;
                             flag[3]=1;
@@ -467,7 +520,8 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.right) || 0) + 400 + "px";
+                            document.getElementById('t1').rows[0].cells[9].innerHTML=document.getElementById('t1').rows[0].cells[16].innerHTML;
+                            document.getElementById('t1').rows[0].cells[16].innerHTML="&nbsp";
                             dem2[1]=0;
                             boat[4]=1;
                             flag[4]=0;
@@ -475,7 +529,8 @@
                         }
                         else if(boatSpace===1)
                         {
-                            document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.right) || 0) + 490 + "px";
+                            document.getElementById('t1').rows[0].cells[10].innerHTML=document.getElementById('t1').rows[0].cells[16].innerHTML;
+                            document.getElementById('t1').rows[0].cells[16].innerHTML="&nbsp";
                             dem2[1]=0;
                             boat[4]=1;
                             flag[4]=1;
@@ -490,7 +545,8 @@
                     {
                         if(boatSpace===0 || boat_flag[0]==0)
                         {
-                            document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.right) || 0) + 310 + "px";
+                            document.getElementById('t1').rows[0].cells[9].innerHTML=document.getElementById('t1').rows[0].cells[17].innerHTML;
+                            document.getElementById('t1').rows[0].cells[17].innerHTML="&nbsp";
                             dem2[2]=0;
                             boat[5]=1;
                             flag[5]=0;
@@ -498,7 +554,8 @@
                         }
                         else if(boatSpace===1)
                         {
-                            document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.right) || 0) + 400 + "px";
+                            document.getElementById('t1').rows[0].cells[10].innerHTML=document.getElementById('t1').rows[0].cells[17].innerHTML;
+                            document.getElementById('t1').rows[0].cells[17].innerHTML="&nbsp";
                             dem2[2]=0;
                             boat[5]=1;
                             flag[5]=1;
@@ -522,12 +579,14 @@
                     if(boat[0]==1)
                     {
                         if(flag[0]==0){
-                            document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 400 + "px";                      
+                            document.getElementById('t1').rows[0].cells[12].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                            document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";                     
                             ang2[0]=1;
                             boat[0]=0;
                         }
                         else if(flag[0]==1){
-                            document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.left) || 0) + 310 + "px";                      
+                            document.getElementById('t1').rows[0].cells[12].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                            document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";                       
                             ang2[0]=1;
                             boat[0]=0;
                         }
@@ -535,12 +594,14 @@
                     if(boat[1]==1)
                     {   
                         if(flag[1]==0){
-                            document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 480 + "px";
+                            document.getElementById('t1').rows[0].cells[13].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                            document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";                             
                             ang2[1]=1;
                             boat[1]=0;
                         }
                         else if(flag[1]==1){
-                            document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.left) || 0) + 390 + "px";
+                            document.getElementById('t1').rows[0].cells[13].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                            document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";                             
                             ang2[1]=1;
                             boat[1]=0;
                         }
@@ -549,26 +610,30 @@
                     if(boat[2]==1)
                     {
                         if(flag[2]==0){
-                            document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 560 + "px";
-                            ang2[2]=1;
+                            document.getElementById('t1').rows[0].cells[14].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                            document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";                            
+                             ang2[2]=1;
                             boat[2]=0;
 
                         }
                         else if(flag[2]==1){
-                            document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.left) || 0) + 470 + "px";
-                            ang2[2]=1;
+                            document.getElementById('t1').rows[0].cells[14].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                            document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";                            
+                             ang2[2]=1;
                             boat[2]=0;
                         }
                     }
                     if(boat[3]==1)
                     {
                         if(flag[3]==0){
-                            document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 640 + "px";
+                            document.getElementById('t1').rows[0].cells[15].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                            document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";                             
                             dem2[0]=1;
                             boat[3]=0;
                         }
                         else if(flag[3]==1){
-                            document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.left) || 0) + 550 + "px";
+                            document.getElementById('t1').rows[0].cells[15].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                            document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";                             
                             dem2[0]=1;
                             boat[3]=0;
                         }
@@ -577,13 +642,14 @@
                     if(boat[4]==1)
                     {
                         if(flag[4]==0){
-                            document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 730 + "px";
+                            document.getElementById('t1').rows[0].cells[16].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                            document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";                             
                             dem2[1]=1;
                         boat[4]=0;
                         }
                         else if(flag[4]==1){
-                            document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.left) || 0) + 640 + "px";
-                           
+                            document.getElementById('t1').rows[0].cells[16].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                            document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";                            
                         dem2[1]=1;
                         boat[4]=0;
                         }
@@ -592,14 +658,14 @@
                     if(boat[5]==1)
                     {
                         if(flag[5]==0){
-                            document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 820 + "px";
-                           
+                            document.getElementById('t1').rows[0].cells[17].innerHTML=document.getElementById('t1').rows[0].cells[7].innerHTML;
+                            document.getElementById('t1').rows[0].cells[7].innerHTML="&nbsp";                            
                         dem2[2]=1;
                         boat[5]=0;
                         }
                         else if(flag[5]==1){
-                            document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.left) || 0) + 730 + "px";
-                           
+                            document.getElementById('t1').rows[0].cells[17].innerHTML=document.getElementById('t1').rows[0].cells[8].innerHTML;
+                            document.getElementById('t1').rows[0].cells[8].innerHTML="&nbsp";                            
                         dem2[2]=1;
                         boat[5]=0;
                         }
@@ -619,12 +685,14 @@
                     if(boat[0]==1)
                     {   
                         if(flag[0]===0){
-                            document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.right) || 0) + 0 + "px";
+                            document.getElementById('t1').rows[0].cells[0].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                            document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";                             
                             ang1[0]=1;
                             boat[0]=0;
                         }
                         else if(flag[0]===1){
-                            document.getElementById("a1").style.left= (parseInt(document.getElementById("a1").style.right) || 0) + 0 + "px";                        
+                            document.getElementById('t1').rows[0].cells[0].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                            document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                         
                             ang1[0]=1;
                         boat[0]=0;
                         }
@@ -633,13 +701,14 @@
                     if(boat[1]==1)
                     {
                         if(flag[1]===0){
-                            console.log('shubh')
-                            document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.right) || 0) + 0 + "px";
+                            document.getElementById('t1').rows[0].cells[1].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                            document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp"; 
                             ang1[1]=1;
                         boat[1]=0;
                         }
                         else if(flag[1]===1){
-                            document.getElementById("a2").style.left= (parseInt(document.getElementById("a2").style.right) || 0) + 0 + "px";
+                            document.getElementById('t1').rows[0].cells[1].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                            document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                             
                             ang1[1]=1;
                             boat[1]=0;
                         }
@@ -648,13 +717,15 @@
                     if(boat[2]==1)
                     {   
                         if(flag[2]===0){
-                            document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.right) || 0) + 0 + "px";
+                            document.getElementById('t1').rows[0].cells[2].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                            document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";                             
                             ang1[2]=1;
                         boat[2]=0;
                         }
                         else if(flag[2]===1){
-                            document.getElementById("a3").style.left= (parseInt(document.getElementById("a3").style.right) || 0) + 0 + "px";
-                            ang1[2]=1;
+                            document.getElementById('t1').rows[0].cells[2].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                            document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                            
+                             ang1[2]=1;
                         boat[2]=0;
                         }
                         
@@ -662,12 +733,14 @@
                     if(boat[3]==1)
                     {
                         if(flag[3]===0){
-                            document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.right) || 0) + 0 + "px";
+                            document.getElementById('t1').rows[0].cells[3].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                            document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";                             
                             dem1[0]=1;
                         boat[3]=0;
                         }
                         else if(flag[3]===1){
-                            document.getElementById("d1").style.left= (parseInt(document.getElementById("d1").style.right) || 0) + 0 + "px";
+                            document.getElementById('t1').rows[0].cells[3].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                            document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                             
                             dem1[0]=1;
                         boat[3]=0;
                         }
@@ -676,26 +749,30 @@
                     if(boat[4]==1)
                     {
                         if(flag[4]===0){
-                            document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.right) || 0) + 0 + "px";
+                            document.getElementById('t1').rows[0].cells[4].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                            document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";                             
                             dem1[1]=1;
                         boat[4]=0;
                         }
                         else if(flag[4]===1){
-                            document.getElementById("d2").style.left= (parseInt(document.getElementById("d2").style.right) || 0) + 0 + "px";
-                             dem1[1]=1;
+                            document.getElementById('t1').rows[0].cells[4].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                            document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                              
+                            dem1[1]=1;
                         boat[4]=0;
                         }
                         
                     }
                     if(boat[5]==1)
                     {   if(flag[5]===0){
-                        document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.right) || 0) + 0 + "px";                        
+                        document.getElementById('t1').rows[0].cells[5].innerHTML=document.getElementById('t1').rows[0].cells[9].innerHTML;
+                        document.getElementById('t1').rows[0].cells[9].innerHTML="&nbsp";                         
                         dem1[2]=1;
                         boat[5]=0;
                         }
                         else if(flag[5]===1){
-                            document.getElementById("d3").style.left= (parseInt(document.getElementById("d3").style.right) || 0) + 0 + "px";                        
-                        dem1[2]=1;
+                            document.getElementById('t1').rows[0].cells[5].innerHTML=document.getElementById('t1').rows[0].cells[10].innerHTML;
+                            document.getElementById('t1').rows[0].cells[10].innerHTML="&nbsp";                         
+                            dem1[2]=1;
                         boat[5]=0;
                         }
                     

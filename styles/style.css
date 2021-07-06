@@ -1,0 +1,95 @@
+body{
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-family: 'Lilita One', cursive;
+    font-size: 140%;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    padding: 50px;
+    color: rgb(255, 0, 0);
+}
+
+.demon{
+    vertical-align: bottom;
+}
+img{
+    vertical-align: bottom;
+}
+
+button{
+    padding: 0;
+    margin:0;
+    border: 0;
+    position: relative;
+}
+    
+table{
+    display: flex;
+    padding: 0;
+    margin: auto;
+    
+}
+td{
+    padding: 0;
+}
+#t1{
+    position: relative;
+    z-index: 0;
+}
+#t2{
+    position: relative;
+    bottom: 2vw;
+    z-index: 1;
+}
+
+
+/* Background Images */
+#back_image{
+    position: relative;
+    bottom: 6.5vw;
+    z-index: 0;
+}
+.land{
+    background-color: green;
+     height: 15vw; 
+    
+}
+#water
+{
+    background-color: rgb(4, 4, 182);
+     height: 15vw; 
+}
+
+/* GO BUTTON */
+.button{
+    
+
+    height: 100px;
+    width: 100%;
+    
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#GO{
+    width: 150px;
+    background-color: orangered;
+    border-radius: 100%;
+    color: ivory;
+    position: relative;
+    bottom: 25px;
+}
+#GO:hover{
+    color: rgb(236, 236, 217);
+    background-color: rgb(211, 56, 0);
+}
+
+
