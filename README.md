@@ -1,1 +1,1 @@
-# canibel_game
+# cannibal_game
